@@ -13,7 +13,7 @@ console.log(str)
 <template>
 	<h1>{{ msg }}</h1>
 
-	<p>
+	<p class="test">
 		Recommended IDE setup:
 		<a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
 		+
@@ -45,7 +45,7 @@ console.log(str)
 	</p>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 a {
 	color: #42b983;
 }
@@ -60,5 +60,9 @@ code {
 	padding: 2px 4px;
 	border-radius: 4px;
 	color: #304455;
+}
+
+.test {
+	color: $test-color;
 }
 </style>
