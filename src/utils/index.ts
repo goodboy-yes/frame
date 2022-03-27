@@ -1,9 +1,8 @@
-import './index.d.ts'
-
-export function add(a, b) {
-	return a + b
-}
-
-export function minus(a, b) {
-	return a - b
+/**
+ * 两次编码url
+ * @param url
+ * @returns
+ */
+export function decode(url: string): string {
+	return decodeURIComponent(decodeURIComponent(url))
 }
